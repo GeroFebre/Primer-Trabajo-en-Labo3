@@ -1,0 +1,313 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffffe3;
+  }
+  
+  /* Estilos del nav */
+  .nav-bar {
+    background-color: rgba(233,0,4,255);
+    position: sticky;
+    height: 80px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    justify-content: space-between;
+    text-align: center;
+    overflow: hidden;
+    transition: height 1.5s;
+}
+  
+  nav {
+    display: block;
+    unicode-bidi: isolate;
+  }
+  
+  .nav-bar a, .nav-item {
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    background-color: rgba(243, 243, 243, 0);
+    color: rgb(255, 255, 255);
+    margin: 30px;
+    padding: 10px;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .nav-bar ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-bar ul li {
+    margin-left: 1rem;
+  }
+  
+  .nav-bar .logo img {
+    float: left;
+    height: 80px; /* Ajusta el tamaño de la imagen aquí */
+    margin-right: 20px;
+  }
+  
+  .nav-item:hover, .nav-bar a:hover {
+    color: rgb(126, 126, 126);
+    transition: color 0.5s;
+    -webkit-transition: color 0.5s;
+    -moz-transition: color 0.5s;
+    -ms-transition: color 0.5s;
+    -o-transition: color 0.5s;
+}
+  
+  .content .fondo img {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    cursor: default;
+  }
+  
+  /* Sección de Recomendados del Chef */
+  .chef-specials {
+    background-color: #ffffff;
+    padding: 2rem;
+    margin-bottom: 3rem;
+    text-align: center;
+  }
+  
+  .chef-specials h1 {
+    color: #e67e22;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .special-items {
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+  
+  .special-item {
+    background-color: #e67e22;;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    padding: 1.5rem;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.349);
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .special-item:hover {
+    transform: scale(1.05);
+  }
+  
+  .special-item h3 {
+    font-size: 1.6rem;
+    color: #cf1f1f;
+    margin: 1rem 0;
+  }
+  
+  .special-item p {
+    color: #cf1f1f;
+  }
+  
+  .price {
+    font-size: 1.2rem;
+    color: #e67e22;
+    font-weight: bold;
+    margin-top: 1rem;
+  }
+  
+  .special-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+  }
+  
+  /* Estilos para el formulario de reservación */
+  .reservation-form {
+    background-color: #f9f9f9;
+    padding: 40px;
+    margin: 40px auto;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    text-align: left;
+  }
+  
+  .reservation-form h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .reservation-form label {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 8px;
+    color: #555;
+  }
+  
+  .reservation-form input[type="date"],
+  .reservation-form input[type="number"],
+  .reservation-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+  }
+  
+  .reservation-form textarea {
+    resize: none;
+  }
+  
+  .reservation-form button {
+    background-color: #d33f49;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .reservation-form button:hover {
+    background-color: #b82e38;
+  }
+  
+  /* Menú */
+  .menu {
+    padding: 2rem;
+    background-color: #acacac;;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .menu h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    color: #ececec;
+  }
+  
+  .menu-section {
+    margin-bottom: 3rem;
+  }
+  
+  .menu-section h2 {
+    border-bottom: 2px solid #e67e22;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+    color: #acacac;
+    font-size: 1.8rem;
+  }
+  
+  /* Diseño de las columnas del menú */
+  .menu-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 2rem;
+  }
+  
+  .menu-item {
+    background-color: #e67e22;;
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  .menu-item h3 {
+    font-size: 1.5rem;
+    color: #cf1f1f;
+  }
+  
+  .menu-item p {
+    font-size: 1rem;
+    color: #1a1a1a;
+  }
+  
+  .menu-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 0.5rem;
+  }
+  
+  /* Responsivo */
+  @media screen and (max-width: 768px) {
+    .nav-bar {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .special-items {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .menu-items {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  /* Estilos del pie de página */
+  .footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  .footer-content {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .footer p {
+    margin: 5px 0;
+  }
+  
+  .footer ul.social-links {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0;
+  }
+  
+  .footer ul.social-links li {
+    display: inline;
+    margin: 0 10px;
+  }
+  
+  .footer ul.social-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  .footer ul.social-links a:hover {
+    color: #d33f49;
+  }
+  
+  .footer a {
+    color: #d33f49;
+    text-decoration: none;
+  }
+  
+  .footer a:hover {
+    text-decoration: underline;
+  }
+  
